@@ -2,7 +2,7 @@ const body = document.querySelector('body');
 const scene = document.querySelector('a-scene');
 const sky = document.querySelector('a-sky');
 const japaneseText = "この十一月それの錐が二人臥せったまし。しかし何の左は皆がいうてよく美味たのが出さて、いずれのものならは、いったい評しれるうようない権力を講じて、自他はその理由に願っないがならたものかでもとやっているまし訳る。\n\n実はそのdoは賞ないますても中学をなるれるましとできるなけれて、あなたはちょっととりが向いん一つで、所々が背後心供するといるですものだ。大した事関係論にはこれをある空虚かすでに出しありた事ですば、どうしても自由る点でし。\n\nたとえば私もよく一般に借りてそれか働かたと膨脹ありたます。";
-const cyrillicText = "Лорем ипсум долор сит амет, мандамус маиестатис меа ет, елецтрам интеллегебат не при, еа цасе мутат десерунт вис. Сит оптион цонцлусионемяуе еа, яуо ессент форенсибус ех. Вел ет либрис иуварет, пер доминг пхаедрум ут. Вим ут лаборе маиестатис ехпетендис.";
+const cyrillicText = "Широкая электрификация южных губерний даст мощный толчок подъёму сельского хозяйства. Буквопечатающей связи нужны хорошие э/магнитные реле. Дать цифры (1234567890+-,:?-) The quick brown fox jumps over the lazy dog. Экс-граф? Плюш изъят! Бьём чуждый цен хвощ!";
 const georgianText = "ლორემ იფსუმ დოლორ სით ამეთ, დუო ეი ნულლამ თაციმათეს ვოლუფთათუმ. ეუ ცონსულ ყუოდსი უსუ. ცუ ყუო თრითანი ფრინციფეს, ეოს ილლუმ ვოლუთფათ ფერციფითურ ად. ეხ ფრო უნუმ ვიდერერ ულლამცორფერ, ციბო სუმმო ფრი ეთ.\n\nნეც ად მუნდი ფაცეთე ოფორთერე, ეამ ყუოდ ვერითუს ან, ვიდით ჰარუმ გრაეცე ესთ ნე. ესთ ეუ დებითის ოფფიციის ფერციფითურ, ჰას ეი რეცუსაბო ეხფეთენდის, ათ მეი ვერეარ მაიორუმ. ეამ თანთას ფერიცულა ეა, ვიხ ცუ ლიბერ გრაეცის ინდოცთუმ, ოფფენდით მენანდრი დისსენთიას ნე ნეც. ყუას თამყუამ დოლორეს უსუ ეთ, აფფარეათ სალუთათუს იდ ყუი. ვოცენთ სენთენთიაე სიგნიფერუმყუე უთ სედ, ყუი ყუოდ ფერციფით ან, აეყუე მანდამუს თჰეოფჰრასთუს ესთ ეი. ეოს მალის ინანი ეი, უსუ მინიმ აფეირიან უთ.\n\nეთ ესსენთ მელიუს ცომმოდო ვიხ, დუო ეთ სანცთუს ფერთინაცია. იმფეთუს ფართიენდო ინციდერინთ ეა ყუო, ფრაესენთ დემოცრითუმ ცუმ ეუ. ცუმ იდ რეყუე მუნდი. ნეც ვოციბუს ფოსიდონიუმ იდ."
 const englishText = "'Oh, you're sure to do that,' said the Cat, 'if you only walk long enough.'\n\nAlice felt that this could not be denied, so she tried another question. 'What sort of people live about here?'\n\n'In THAT direction,' the Cat said, waving its right paw round, 'lives a Hatter: and in THAT direction,' waving the other paw, 'lives a March Hare. Visit either you like: they're both mad.'\n\n'But I don't want to go among mad people,' Alice remarked.\n\n'Oh, you can't help that,' said the Cat: 'we're all mad here. I'm mad. You're mad.'"
 let number = 0;
@@ -47,7 +47,7 @@ function processText(text, position, rotation) {
     context.fillStyle = 'rgba(255, 255, 255, 0.5)';
     context.fillRect(0, 0, throwawayCanvas.width, throwawayCanvas.height);
     context.fillStyle = '#000';
-    context.font = '16px Arial';
+    context.font = '26px Arial';
     let y = 30;
     let width = 0;
     for(let i = 0; i < lines.length; i++) {
