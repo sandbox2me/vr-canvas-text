@@ -47,7 +47,7 @@ function processText(text, position, rotation) {
     context.fillStyle = 'rgba(255, 255, 255, 0.5)';
     context.fillRect(0, 0, throwawayCanvas.width, throwawayCanvas.height);
     context.fillStyle = '#000';
-    context.font = '36px Arial';
+    context.font = '23px Arial';
     let y = 30;
     let width = 0;
     for(let i = 0; i < lines.length; i++) {
